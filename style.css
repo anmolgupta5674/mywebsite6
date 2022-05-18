@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('./businessman-using-tablet-laptop-analyzing-sales-data-economic-growth-graph-chart-business-strategy-digital-marketing-154742021.jpg');
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.logo img {
+    width: 210px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.nav-links ul li a:hover::after {
+    transition: 0.5s;
+    width: 100%;
+    height: 2px;
+    display: block;
+    background: red;
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-box h1 {
+    color: rgba(0, 0, 0);
+    font-size: 92px;
+}
