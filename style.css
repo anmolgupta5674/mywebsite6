@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('./background.jpg');
+}
+
+nav{
+    align-items: center;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.logo img{
+    width: 130px;
+}
+
+
+.nav-links ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+
+nav .fa-solid{
+    display: none;
+}
+
+
+
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin:20px;
+}
+
+.items h1{
+    text-align: center;
+    font-size: 55px;
+}
+
+.burger-image{
+    position: absolute;
+    width: 260px;
+    background: grey;
+    height: 225px;
+    border-radius: 30px;
+    border: 2px solid rgba(0,0,0,0.4);
+    border-radius: 30px;
+    margin-left: 20px;
+    box-sizing: border-box;
+
+}
+
+
+.burger-image:hover{
+    box-sizing: border-box;
+    box-shadow: rgba(0,0,0,0.4);
+}
+
+.burger-image img{
+    width:130px;
+    margin-left: 60px;
+    margin-top:8px;
+    display: flex;
+    
+}
+
+.burger-image h1{
+    text-align: center;
+}
+
+.burger-image a{
+    text-align: center;
+    color:#fff;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 2px solid rgba(0,0,0);
+    margin-left: 50px;
+    background: red;
+}
+
+.burger-image p{
+    text-align: center;
+}
+
+
+.pizza-image{
+    position: absolute;
+    width:410px;
+    height: 390px;
+    background: grey;
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: flex;
+    border: 2px solid rgba(0,0,0);
+    margin-left: 300px;
+}
+
+
+.pizza-image img{
+    width: 290px;
+    height:200px;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+
+.pizza-image h1{
+    text-align: center;
+    margin-top:250px;
+    font-size: 22px;
+    margin-left: -200px;
+    width: 100%;
+    display: flex;
+    margin-top: 230px;
+}
+
+.pizza-image p{
+    text-align: center;
+    margin-top: 290px;
+    font-size: 21px;
+    margin-left: -290px;
+    width: 100%;
+    margin-top: 260px;
+    display: flex;
+}
+
+.pizza-image a{
+    width:100%;
+    margin-top:300px;
+    margin-left:-460px;
+    text-decoration: none;
+    font-size: 45px;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid rgba(0,0,0);
+    border-width:.20px;
+    background: red;
+    color:#fff;
+
+}
+
+.cta{
+    position: absolute;
+    margin-top: 500px;
+    text-align: center;
+    margin-left: 450px;
+}
+
+.cta h1{
+    text-align: center;
+    color:red;
+}
+
+.cta .fa-brands{
+    display: inline-block;
+    color:red;
+    font-size: 25px;
+    margin:20px;
+}
+@media only screen and (max-width:480px){
+
+    .header{
+        max-width:480px;
+        height: 100vh;
+        
+    }
+    .logo img{
+        width:90px;
+    }
+
+    .nav-links{
+        position: absolute;
+        width:200px;
+        height: 100vh;
+        background: red;
+        z-index: 2;
+        transition: 1s;
+        top:0;
+        right:-200px;
+    }
+
+    .nav-links ul li{
+        display: block;
+        padding: 12px;
+    }
+
+    .nav-links ul li a{
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    nav .fa-solid{
+        display: block;
+        color:#fff;
+        padding: 30px;
+    }
+
+    .items h1{
+        text-align: center;
+        font-size: 45px;
+    }
+
+
+    .burger-image{
+        display: flex;
+        flex-direction: column;
+        margin-left: 70px;
+        margin-right: 70px;
+        background: grey;
+        border: 2px solid rgba(0,0,0);
+        box-sizing: border-box;
+    }
+
+    .burger-image h1{
+        text-align: center;
+    }
+
+    .burger-image p{
+        text-align: center;
+    }
+
+
+    .burger-image a{
+        text-align: center;
+        text-decoration: none;
+        border-radius: 30px;
+        border: 2px solid rgba(0,0,0);
+        margin-left:10px;
+    }
+
+
+    .pizza-image{
+        box-sizing: border-box;
+        flex-direction: column;
+        margin-top: 290px;
+        margin-left: 50px;
+        width:300px;
+        height: 320px;
+    }
+
+    .pizza-image img{
+        flex-direction: column;
+        display: flex;
+        width:200px;
+        margin-left:60px;
+    }
+
+    .pizza-image h1{
+        text-align: center;
+        width: 100%;
+        margin-left: 70px;
+        margin-top: -30px;
+    }
+
+    .pizza-image p{
+        text-align: center;
+        margin-top:-07px;
+        margin-left: 70px;
+    }
+
+    .pizza-image a{
+        text-decoration: none;
+        text-align: center;
+        border: 2px solid rgba(0,0,0);
+        border-radius: 30px;
+        margin-top: 30px;
+        font-size: 35px;
+        margin-left: 5px;
+    }
+
+    .cta{
+        position: absolute;
+        margin-top: 690px;
+        margin-left:60px;
+    }
+
+    .cta h1{
+        text-align: center;
+        color:rgba(0,0,0);
+        margin-left: 50px;
+        font-size: 25px;
+    }
+
+    .cta .fa-brands{
+        margin-left: 80px;
+        margin: 10px;
+    }
+
+
+
+
+
+}

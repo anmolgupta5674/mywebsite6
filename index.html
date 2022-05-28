@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+        <title> ORDER NOW </title>
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <div class="logo">
+                    <img src="odernow.png", alt="logo">
+                </div>
+
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li> <a href="#"> HOME </a> </li>
+                        <li> <a href="#"> ABOUT </a> </li>
+                        <li> <a href="#"> SERVICES </a> </li>
+                        <li> <a href="#"> ITEMS </a> </li>
+                        <li> <a href="#"> QUERIES </a> </li>
+                        <li> <a href="contactus.html"> CONTACT US </a> </li>
+                        <li> <a href="#"> DELIVERY </a> </li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </section>
+
+        <section class="items">
+            <h1> Our items </h1>
+        </section>
+
+        <section class="burger-image">
+            <img src="burger.jpg", alt="burger">
+            <h1> Italian Burger </h1>
+            <p> Price 100Rs </p>
+            <a href="#"> ORDER NOW <i class="fa-solid fa-basket-shopping"></i>
+            </a>
+        </section>
+
+        <section class="pizza-image">
+            <img src="pizza-g15b94d94a_1280.jpg", alt="pizza">
+            <br>
+            <h1> Tomato Pizza </h1>
+            <p> Price 500Rs </p>  
+            <a href="#"> ORDER NOW <i class="fa-solid fa-basket-shopping"></i>
+            </a>
+        </section>
+
+
+        <section class="cta">
+            <h1> Made with love by <br> Anmol Gupta </h1> 
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-snapchat"></i>
+        </section>
+
+
+        <script>
+            var navLinks = document.getElementById('navLinks')
+
+            function showMenu()
+            {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu()
+            {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
